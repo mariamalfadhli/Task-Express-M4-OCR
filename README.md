@@ -10,6 +10,27 @@ In this task, you will create a cool api that takes an image and returns the tex
 
 Use this image for testing
 
+### Morgan Setup
+
+1. Install [multer](https://www.npmjs.com/package/morgan)
+
+```shell
+$ npm install morgan
+```
+2. In `app.js`, create a variable called morgan.
+3. Configure your express application to use morgan using the `dev` format.
+
+
+### Cors
+
+1. Install [cors](https://www.npmjs.com/package/cors)
+
+```shell
+$ npm install cors
+```
+2. In `app.js`, create a variable called cors.
+3. Enable your app to use the cors middleware.
+
 ### Setup Media Folder
 
 Create a route for the media files.
@@ -67,10 +88,12 @@ const upload = require('../../middleware/multer');
 2. If a file is uploaded, save the path in the body of the URL.
 3. The path must include the request's protocol `http` and the host `req.get("host")` followed by `media` and the file's name.
 
+## The rest is a challenge!
+
 ### OCR!
 
-1. Use the following (package)[https://www.npmjs.com/package/tesseract.js/v/2.1.1]
-2. The rest is a challenge!
+1. Install the following [package](https://www.npmjs.com/package/tesseract.js/v/2.1.1) and read the [docs](https://github.com/naptha/tesseract.js) on its implementation
+2. In your `ocr.controllers`, use the package to receive an image that contains some text, and return the contents of that image in a json object.
 
 ### 🍋 Multer Size Limit
 
