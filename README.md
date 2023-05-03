@@ -103,6 +103,3 @@ In `multer.js` specify a size limit of 1 megabyte for the files uploaded.
 
 In `multer.js` specify a the file types which are allowed to upload, we need to only upload images!
 
-### 🌶 Back To React
-
-Create a front end page for your ocr api!
