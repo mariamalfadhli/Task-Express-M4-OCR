@@ -1,7 +1,8 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const { ocrCreate } = require('./ocr.controllers');
+const uploader = require("./uploader");
+const { ocrCreate } = require("./ocr.controllers");
 
-router.post('/', ocrCreate);
+router.post("/", ocrCreate);
 
 module.exports = router;
